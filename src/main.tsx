@@ -1,10 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import "./index.css"
 import Home from "./pages/Home"
-import { Login } from "@mui/icons-material"
 import ErrorPage from "./pages/ErrorPage"
+import Login from "./pages/Login"
 
 const router = createBrowserRouter([
 	{
