@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home"
 import ErrorPage from "./pages/ErrorPage"
 import SignIn from "./pages/SignIn"
+import { GlobalStyle } from "./styles/GlobalStyle"
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>
+		<GlobalStyle />
 		<RouterProvider router={router} />
 	</React.StrictMode>
 )

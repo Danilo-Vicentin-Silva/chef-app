@@ -1,5 +1,4 @@
-import * as React from "react"
-import { HeaderStyle } from "./styles"
+import { HeaderStyle } from "../styles/styles"
 import { TextField } from "@mui/material"
 
 const Header = () => {
