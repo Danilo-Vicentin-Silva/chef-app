@@ -20,12 +20,12 @@ const Login = () => {
 				<section>
 					<img src={user.photoURL} alt="Foto do usuário" />{" "}
 					<p>Bem vindo de volta! {user.displayName}</p>
-					<Button variant="contained">
+					<Button variant="outlined">
 						<a href="/">Vamos Começar!</a>
 					</Button>
 				</section>
 			)}
-			<Button variant="contained" onClick={handleGoogleSignIn}>
+			<Button variant="outlined" onClick={handleGoogleSignIn}>
 				Logar com Google
 			</Button>
 		</section>

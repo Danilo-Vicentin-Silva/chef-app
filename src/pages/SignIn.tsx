@@ -1,13 +1,16 @@
 import Login from "../forms/Login"
+import { LoginInterface } from "../styles/styles"
+import Logo from "../images/logo.png"
 
 const SignIn = () => {
 	return (
-		<main>
+		<LoginInterface>
 			<section>
-				<h1>Chef App</h1>
+				<img id="logo" src={Logo} alt="Logo" height={"500px"} width={"500px"} />
+				<h1>SEJA BEM VINDO!</h1>
 				<Login />
 			</section>
-		</main>
+		</LoginInterface>
 	)
 }
 
