@@ -2,6 +2,7 @@ import { GoogleAuthProvider, signInWithPopup, User } from "firebase/auth"
 import { auth } from "../services/firebase"
 import { Button } from "@mui/material"
 import { useState } from "react"
+import LoginIcon from "@mui/icons-material/Login"
 
 const Login = () => {
 	const [user, setUser] = useState<User>({} as User)
@@ -25,8 +26,8 @@ const Login = () => {
 					</Button>
 				</section>
 			)}
-			<Button variant="outlined" onClick={handleGoogleSignIn}>
-				Logar com Google
+			<Button size="large" variant="outlined" onClick={handleGoogleSignIn}>
+				Logar com Google <LoginIcon />
 			</Button>
 		</section>
 	)
