@@ -17,18 +17,18 @@ const Login = () => {
 
 	return (
 		<section>
-			{user.photoURL && (
-				<section>
-					<img src={user.photoURL} alt="Foto do usuário" />{" "}
-					<p>Bem vindo de volta! {user.displayName}</p>
-					<Button variant="outlined">
+			{user.displayName ? (
+				<>
+					<p>Bem vindo de volta, {user.displayName}!</p>
+					<Button size="large" variant="outlined">
 						<a href="/">Vamos Começar!</a>
 					</Button>
-				</section>
+				</>
+			) : (
+				<Button size="large" variant="outlined" onClick={handleGoogleSignIn}>
+					Logar com Google <LoginIcon />
+				</Button>
 			)}
-			<Button size="large" variant="outlined" onClick={handleGoogleSignIn}>
-				Logar com Google <LoginIcon />
-			</Button>
 		</section>
 	)
 }
