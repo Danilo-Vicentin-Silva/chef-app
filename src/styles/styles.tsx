@@ -1,8 +1,20 @@
 import styled from "styled-components"
 
 export const HeaderStyle = styled.header`
+	text-align: center;
+	padding: 30px;
 	position: sticky;
 	top: 0;
+
+	#title {
+		color: #2f4023;
+		font-family: "Lobster Two", cursive;
+	}
+
+	#separator {
+		background-color: yellow;
+		margin: 10px 0;
+	}
 `
 
 export const LoginInterface = styled.main`

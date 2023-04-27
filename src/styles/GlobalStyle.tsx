@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     html, body {
         background-color: #f2d0bd;
-        font-family: 'Lobster', cursive;
+        font-family: 'Lobster Two', cursive;
         font-family: 'Montserrat', sans-serif;
     }
 `

@@ -1,11 +1,12 @@
 import { HeaderStyle } from "../styles/styles"
-import { TextField } from "@mui/material"
+import SearchInput from "./SearchInput"
 
 const Header = () => {
 	return (
 		<HeaderStyle>
-			<h1>Chef App</h1>
-			<TextField label="Procurar Receitas" variant="outlined" />
+			<h1 id="title">CHEF APP</h1>
+			<hr id="separator" />
+			<SearchInput />
 		</HeaderStyle>
 	)
 }
